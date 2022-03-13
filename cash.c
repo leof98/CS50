@@ -15,7 +15,6 @@ int main(void)
     
     int centavos = round(troco * 100);
 
-   
     while (centavos >= 1)
     {   
         if (centavos >= 25)
