@@ -233,7 +233,3 @@ void print_winner(void)
     }
     return;
 }
-
-//95% do projeto copiado do https://github.com/MrJoia/.
-// Estudar muito esse exercíco, longe de entender aindazzzzzz
-// 13/03
