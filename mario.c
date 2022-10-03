@@ -1,35 +1,36 @@
-#include <stdio.h>
 #include <cs50.h>
+#include <stdio.h>
 
 int main(void)
 {
-    int altura;
+    // Pede uma altura entre 1 e 8 ao usuario
+    int height;
     do
     {
-        altura = get_int("Altura: ");  
+        height = get_int("Height: ");
     }
-    while (altura < 1 || altura > 8);
+    while (height < 1 || height > 8);
 
-
-    for (int linha = 0; linha < altura; linha++)
+    // Primeira piramide
+    for (int row = 0; row < height; row++)
     {
-        for (int coluna = 0; coluna < altura; coluna++)
+        for (int column = 0; column < height; column++)
         {
-            if (linha + coluna < altura - 1)  // Verificação dos espaços para alinhamento dos blocos.
+            if (row + column < height - 1) // Alinhamento
             {
-                printf(" ");  
+                printf(" ");
             }
-            else 
+            else
             {
-                printf("#");   
+                printf("#");
             }
         }
         printf("  ");
-        
-        // Impressão da segunda pirâmide
-        for (int coluna = 0; coluna < altura; coluna++)
+
+        // Segunda pirâmide
+        for (int column = 0; column < height; column++)
         {
-            if (linha >= coluna)
+            if (row >= column)
             {
                 printf("#");
             }
