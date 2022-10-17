@@ -8,7 +8,7 @@ int main(void)
     long digitos = 0;
     long nDigitos = 0;
   
-    // Prompt for input
+    // Prompt
     do
     {
         nCartao = get_long("Informe o número do cartão: ");
@@ -24,7 +24,7 @@ int main(void)
         nDigitos++;
     }
     
-    // Checksum's algorithm
+    // algorithm
     int nAtual;
     int parTotal = 0;
     int imparTotal = 0;
